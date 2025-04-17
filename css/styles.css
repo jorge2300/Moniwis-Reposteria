@@ -687,7 +687,7 @@ main {
 }
 
 .logo img {
-  max-height: 50px; /* Ajusta este valor para el tamaño móvil */
+  max-height: 1px; /* Ajusta este valor para el tamaño móvil */
   width: auto; /* Mantiene la proporción */
 }
 
