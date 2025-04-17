@@ -1,125 +1,128 @@
-        /* Estilos generales */
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff9f0;
-            color: #333;
-        }
-
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem;
-            background-color: #ead6d6;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            box-shadow: 0 2px 4px rgb(248, 248, 0);
-          }
-          .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-          }
-          .menu-toggle {
-            font-size: 1.5rem;
-            cursor: pointer;
-          }
-          .side-menu {
-            position: fixed;
-            top: 0;
-            left: -100%;
-            width: 250px;
-            height: 100%;
-            background-color: #ff73009d;
-            padding: 2rem;
-            box-shadow: 2px 0 6px rgba(0,0,0,0.2);
-            transition: left 0.3s ease;
-            z-index: 1000;
-          }
-          .side-menu.open {
-            left: 0;
-          }
-          .close-btn {
-            font-size: 1.5rem;
-            cursor: pointer;
-            text-align: right;
-          }
-          .side-menu ul {
-            list-style: none;
-            padding: 0;
-            margin-top: 2rem;
-          }
-          .side-menu li {
-            margin-bottom: 1rem;
-          }
-          .side-menu a {
-            text-decoration: none;
-            color: #333;
-            font-size: 1.2rem;
-          }
-
-
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        h1, h2, h3 {
-            font-family: 'Playfair Display', serif;
-            color: #ab550f;
-        }
-        
-        /* Estilos para la galería */
-        .gallery-header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        .gallery-header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-        }
-        
-        .gallery-header p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .pastel-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-        
-        .pastel-card {
-          background: white;
-          border-radius: 10px;
-          overflow: hidden;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-          transition: transform 0.3s ease;
-          cursor: default; /* Cambiamos el cursor por defecto */
-      }
-
-      .pastel-image-container {
-        cursor: pointer; /* Solo la imagen tiene cursor pointer */
-    }
-
-
-        
-.pastel-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+/* Estilos generales */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff9f0;
+  color: #333;
 }
 
-        
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ead6d6;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgb(248, 248, 0);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: block;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  height: 100%;
+  background-color: #ff73009d;
+  padding: 2rem;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.2);
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.close-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: right;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.side-menu li {
+  margin-bottom: 1rem;
+}
+
+.side-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #ab550f;
+}
+
+/* Estilos para la galería */
+.gallery-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.gallery-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.gallery-header p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pastel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.pastel-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.pastel-image-container {
+  cursor: pointer;
+}
+
+.pastel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
 .pastel-card img {
   width: 100%;
   height: 200px;
@@ -127,8 +130,6 @@
   display: block;
 }
 
-
-        
 .pastel-card h3 {
   padding: 15px;
   margin: 0;
@@ -136,217 +137,164 @@
   text-align: center;
 }
 
-        
-        /* Estilos para el modal de detalles */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.8);
-            z-index: 1000;
-            overflow-y: auto;
-        }
-        
-        .modal-content {
-            background-color: white;
-            margin: 50px auto;
-            padding: 30px;
-            border-radius: 10px;
-            max-width: 900px;
-            display: flex;
-            flex-wrap: wrap;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-        
-        .modal-image {
-            flex: 1;
-            min-width: 300px;
-        }
-        
-        .modal-image img {
-            width: 100%;
-            border-radius: 8px;
-            max-height: 500px;
-            object-fit: cover;
-        }
-        
-        .modal-details {
-            flex: 1;
-            min-width: 300px;
-            padding-left: 30px;
-        }
-        
-        .close-btn {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 2rem;
-            color: white;
-            cursor: pointer;
-        }
-        
-        .price-range {
-            font-weight: bold;
-            color: #c0392b;
-            font-size: 1.2rem;
-            margin: 15px 0;
-        }
-        
-        .size-options {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin: 20px 0;
-        }
-        
-        .size-option {
-            background: #f5f5f5;
-            padding: 10px 15px;
-            border-radius: 5px;
-            text-align: center;
-            flex: 1;
-            min-width: 100px;
-        }
-        
-        .size-option .size {
-            font-weight: bold;
-            display: block;
-        }
-        
-        .size-option .price {
-            color: #c0392b;
-            font-weight: bold;
-        }
-        
-        .ingredients-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        
-        .ingredients-list li {
-            padding: 8px 0;
-            border-bottom: 1px solid #eee;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .modal-content {
-                flex-direction: column;
-                margin: 20px;
-            }
-            
-            .modal-details {
-                padding-left: 0;
-                padding-top: 20px;
-            }
-            
-            .pastel-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .pastel-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-
-
-
-        
-.site-footer {
-    background-color: #333; /* Color de fondo oscuro */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    font-family: Arial, sans-serif;
-   /*position: fixed;  Fija el footer abajo 
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); 
-    */
-  }
-  
-  .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  
-  .footer-contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  
-  .separator {
-    color: #aaa; /* Color más claro para la barra "|" */
-  }
-  
-  
-  
-  
-  
-  main {
-    flex: 1; /* Hace que el contenido ocupe el espacio restante */
-  }
-
-
-    /* Botón flotante de WhatsApp */
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-  }
-  
-  .whatsapp-float:hover {
-    background-color: #128C7E;
-    transform: scale(1.1);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  .whatsapp-icon {
-    margin-top: 5px;
-  }
-
-
-
-
-  .add-to-cart {
-    background-color: #ffb7b2;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    width: 100%;
+/* Estilos para el modal de detalles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 1000;
+  overflow-y: auto;
 }
 
+.modal-content {
+  background-color: white;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
 
+.modal-image {
+  flex: 1;
+  min-width: 300px;
+}
 
-/* Estilos para el carrito */
+.modal-image img {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.modal-details {
+  flex: 1;
+  min-width: 300px;
+  padding-left: 30px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.price-range {
+  font-weight: bold;
+  color: #c0392b;
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.size-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.size-option {
+  background: #f5f5f5;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1;
+  min-width: 100px;
+}
+
+.size-option .size {
+  font-weight: bold;
+  display: block;
+}
+
+.size-option .price {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.ingredients-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ingredients-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.separator {
+  color: #aaa;
+}
+
+main {
+  flex: 1;
+}
+
+/* WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #128C7E;
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-icon {
+  margin-top: 5px;
+}
+
+/* Carrito */
 .header-right {
   display: flex;
   align-items: center;
@@ -474,7 +422,6 @@
   background-color: #e67e22;
 }
 
-/* Overlay para cuando el carrito está abierto */
 .cart-overlay {
   position: fixed;
   top: 0;
@@ -490,7 +437,6 @@
   display: block;
 }
 
-/* Estilos para botones de agregar al carrito */
 .add-to-cart {
   background-color: #ab550f;
   color: white;
@@ -504,40 +450,30 @@
   width: calc(100% - 30px);
 }
 
-
-
-
-
 .add-to-cart:hover {
   background-color: #e67e22;
 }
 
-
-
 .cart-notification {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #25d366;
-    color: white;
-    padding: 15px 25px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1100;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #25d366;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1100;
 }
 
 .cart-notification.show {
-    opacity: 1;
+  opacity: 1;
 }
 
-
-
-
-
-/* Estilos para el formulario de pedido */
+/* Checkout */
 .checkout-modal {
   position: fixed;
   top: 0;
@@ -591,7 +527,6 @@
 }
 
 .form-group input,
-
 .form-group textarea {
   width: 100%;
   padding: 10px;
@@ -619,4 +554,117 @@
 
 .submit-order-btn:hover {
   background-color: #128C7E;
+}
+
+/* ============================================= */
+/* MEDIA QUERIES PARA DISPOSITIVOS MÓVILES */
+/* ============================================= */
+
+@media (max-width: 768px) {
+  /* Ajustes generales */
+  body {
+      font-size: 14px;
+  }
+  
+  /* Header */
+  header {
+      padding: 10px;
+  }
+  
+  .logo {
+      font-size: 1.2rem;
+  }
+  
+  /* Galería */
+  .gallery-header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+  }
+  
+  .gallery-header p {
+      font-size: 1rem;
+      padding: 0 15px;
+  }
+  
+  .pastel-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 0 15px;
+  }
+  
+  .pastel-card img {
+      height: 180px;
+  }
+  
+  /* Modal */
+  .modal-content {
+      margin: 20px;
+      padding: 20px;
+      flex-direction: column;
+  }
+  
+  .modal-image {
+      min-width: 100%;
+  }
+  
+  .modal-details {
+      min-width: 100%;
+      padding-left: 0;
+      padding-top: 20px;
+  }
+  
+  .size-options {
+      flex-direction: column;
+      gap: 10px;
+  }
+  
+  .size-option {
+      min-width: auto;
+  }
+  
+  /* Footer */
+  .footer-contact {
+      flex-direction: column;
+      gap: 8px;
+  }
+  
+  .separator {
+      display: none;
+  }
+  
+  /* WhatsApp */
+  .whatsapp-float {
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      bottom: 20px;
+      right: 20px;
+  }
+  
+  /* Carrito */
+  .cart-sidebar {
+      width: 90%;
+      max-width: 320px;
+  }
+  
+  .cart-item {
+      flex-direction: column;
+  }
+  
+  .cart-item img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .pastel-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .modal-content {
+      margin: 30px;
+  }
 }
