@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteles Moniwis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/cupcake.css">
+
+</head>
+<body>
+    <script src="js/main.js"></script>
+    <script src="js/cupcake.js"></script>
+    <script src="js/cart.js"></script>
+    <header>
+        <div class="logo"><a href="index.html"> <img src="img/home4.png" alt="1">  </a> </div>
+        <div class="header-right">
+            <div class="cart-icon" id="cart-toggle">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+          </div>
+    
+          <div class="menu-toggle" id="menu-toggle">☰</div>
+      </div>
+        <nav class="side-menu" id="side-menu">
+          <div class="close-btn" id="close-menu">✖</div>
+          <ul>
+            <li><a href="cupcake.html">Cupcakes</a></li>
+            <li><a href="pasteles.html">Pasteles</a></li>
+     <!--          <li><a href="mio_blog.html">Blog</a></li>-->
+          </ul>
+        </nav>
+      </header>
+
+
+
+    <div class="container">
+        <!-- Encabezado -->
+        <div class="gallery-header">
+            <h1>Pastelería Moniwis: Un Pastel Personalizado a tu estilo</h1>
+            <p> En Pastelería Moniwis, celebramos la alegría de compartir con los que más amas. Te ofrecemos una deliciosa variedad de pasteles perfectos para cumpleaños, baby showers, reuniones familiares y cualquier ocasión especial.</p>
+            <h2>Descubre nuestras creaciones y haz de tu evento algo verdaderamente especial.
+
+            </h2>
+        </div>
+        
+        <!-- Galería de pasteles -->
+        <div class="pastel-grid">
+            <!-- Pastel 1 -->
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Mini Pastel', 'img/Pastel2.png', ['No incluye costo extra de personalización con glitter,escarchado,Oblea o rellenos extra etc.', 'Betun', 'Color a elección'], [
+                    {size: 'Mini Pastel', persons: '5-6 Personas', price: '$150.00'},
+                    {size: 'Pastel Chico', persons: '15 Personas', price: '$360.00'},
+                    {size: 'Pastel Mediano', persons: '25-30 Personas', price: '$620.00'},
+                    {size: 'Pastel Grande', persons: '50 Personas', price: '$780.00'}
+                ])">
+                    <img src="img/Pastel2.png" alt="Mini Pastel">
+                    <h3>Mini Pastel</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Mini Pastel', 150, 'img/Pastel2.png')">Agregar al carrito</button>
+            </div>
+            
+            
+            <!-- Pastel 2 -->
+  
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Pastel Chico', 'img/Pastel03.jpeg', ['No incluye costo extra de personalización con glitter,escarchado,Oblea o rellenos extra etc.', 'Betun', 'Color a elección'], [
+                    {size: 'Mini Pastel', persons: '5-6 Personas', price: '$150.00'},
+                    {size: 'Pastel Chico', persons: '15 Personas', price: '$360.00'},
+                    {size: 'Pastel Mediano', persons: '25-30 Personas', price: '$620.00'},
+                    {size: 'Pastel Grande', persons: '50 Personas', price: '$780.00'}
+                ])">
+                    <img src="img/Pastel03.jpeg" alt="Pastel Chico">
+                    <h3>Pastel Chico</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Pastel Chico', 360, 'img/Pastel03.jpeg')">Agregar al carrito</button>
+            </div>
+
+
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Pastel Mediano', 'img/Pastel3.png', ['No incluye costo extra de personalización con glitter,escarchado,Oblea o rellenos extra etc.', 'Betun', 'Color a elección'], [
+                    {size: 'Mini Pastel', persons: '5-6 Personas', price: '$150.00'},
+                    {size: 'Pastel Chico', persons: '15 Personas', price: '$360.00'},
+                    {size: 'Pastel Mediano', persons: '25-30 Personas', price: '$620.00'},
+                    {size: 'Pastel Grande', persons: '50 Personas', price: '$780.00'}
+                ])">
+                    <img src="img/Pastel3.png" alt="Pastel Mediano">
+                    <h3>Pastel Mediano</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Pastel Mediano', 620, 'img/Pastel3.png')">Agregar al carrito</button>
+            </div>
+            
+            
+            <!-- Pastel 2 -->
+  
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Pastel Grande', 'img/Pastel100.jpeg', ['No incluye costo extra de personalización con glitter,escarchado,Oblea o rellenos extra etc.', 'Betun', 'Color a elección'], [
+                    {size: 'Mini Pastel', persons: '5-6 Personas', price: '$150.00'},
+                    {size: 'Pastel Chico', persons: '15 Personas', price: '$360.00'},
+                    {size: 'Pastel Mediano', persons: '25-30 Personas', price: '$620.00'},
+                    {size: 'Pastel Grande', persons: '50 Personas', price: '$780.00'}
+                ])">
+                    <img src="img/Pastel100.jpeg" alt="Pastel Grande">
+                    <h3>Pastel Grande</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Pastel Grande', 780, 'img/Pastel100.jpeg')">Agregar al carrito</button>
+            </div>
+
+
+            <!-- Puedes continuar agregando más pasteles hasta 12 -->
+        </div>
+    </div>
+    
+    <!-- Modal de detalles -->
+    <div id="pastelModal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="modal-image">
+                <img id="modalPastelImage" src="" alt="">
+            </div>
+            <div class="modal-details">
+                <h2 id="modalPastelTitle"></h2>
+                <div class="price-range" id="modalPriceRange"></div>
+                
+                <div class="size-options" id="sizeOptions"></div>
+                
+                <h3>Saber más</h3>
+                <ul class="ingredients-list" id="ingredientsList"></ul>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="https://wa.me/521831421734" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+      </a>
+    
+      <footer class="site-footer">
+        <div class="footer-content">
+            <p class="copyright">© 2025 Moniwis Repostería - Todos los derechos reservados</p>
+            <div class="footer-contact">
+                <span>Contacto: rociobmd10@gmail.com</span>
+                <span class="separator">|</span>
+                <span>Tel: 834-142-1734</span>
+            </div>
+            
+            <div class="terms-conditions">
+                <p>Términos: Precios sujetos a confirmación. Moniwis se reserva el derecho de corregir errores.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+
+      <!-- Carrito de compras -->
+<div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+        <h3>Tu Carrito</h3>
+        <button class="close-cart" id="close-cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+        <!-- Los productos se agregarán dinámicamente aquí -->
+    </div>
+    <div class="cart-total">
+        <span>Total:</span>
+        --<span id="cart-total">$0.00</span>
+    </div>
+    <button class="checkout-btn" id="checkout-btn">Finalizar Compra</button>
+  </div>
+  
+  <!-- Formulario de pedido -->
+  <div class="checkout-modal" id="checkout-modal">
+    <div class="checkout-content">
+        <span class="close-checkout" id="close-checkout">&times;</span>
+        <h3>Información del Pedido</h3>
+        <form id="order-form">
+            <div class="form-group">
+                <label for="customer-name">Nombre completo:</label>
+                <input type="text" id="customer-name" required>
+            </div>
+            <div class="form-group">
+                <label for="delivery-date">Fecha de entrega:</label>
+                <input type="date" id="delivery-date" required>
+            </div>
+            <div class="form-group">
+                <label for="delivery-address">Dirección de entrega:</label>
+                <textarea id="delivery-address" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="customer-phone">Teléfono de contacto:</label>
+                <input type="tel" id="customer-phone" required>
+            </div>
+            <div class="form-group">
+                <label for="special-notes">Notas adicionales:</label>
+                <textarea id="special-notes" rows="2"></textarea>
+            </div>
+            <button type="submit" class="submit-order-btn">Enviar pedido por WhatsApp</button>
+        </form>
+    </div>
+  </div>
+
+  
+
+
+</body>
+</html>

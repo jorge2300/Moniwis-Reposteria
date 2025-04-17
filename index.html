@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Moniwis</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <header>
+        <div class="logo"><a href="#"> <img src="img/home4.png" alt="1">  </a> </div>
+        <div class="header-right">
+        <div class="cart-icon" id="cart-toggle">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+      </div>
+
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+      </div>
+        <nav class="side-menu" id="side-menu">
+          <div class="close-btn" id="close-menu">✖</div>
+          <ul>
+            <li><a href="cupcake.html">Cupcakes</a></li>
+            <li><a href="pasteles.html">Pasteles</a></li>
+    
+          </ul>
+        </nav>
+      </header>
+
+
+    
+      <section class="carousel">
+        <div class="carousel-container">
+          <!-- Slide 1 -->
+          <a href="cupcake.html" class="carousel-link">
+            <div class="carousel-slide">
+              <img src="img/Clasicos50.jpeg" alt="Imagen 1">
+              <div class="carousel-text">Cupcakes y Pasteles con amor</div>
+              <div class="texto-oferta">
+                <p class="destacado">Moniwis Cupcakes: <span>Dulces momentos,</span> grandes sonrisas</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Slide 2 -->
+          <a href="pasteles.html" class="carousel-link">
+            <div class="carousel-slide">
+              <img src="img/Figurosos3.png" alt="Imagen 2">
+              <div class="texto-oferta">
+                <p class="destacado">Celebra con sabor.<span> Celebra con</span> Moniwis </p>
+              </div>
+          </div>
+          </a>
+
+          <!-- Slide 3 -->
+          <div class="carousel-slide">
+            <img src="img/Pastel50.jpg" alt="Imagen 3">
+            <div class="texto-oferta">
+              <p class="destacado"> Pasteles Decorados <span>Para cada ocasión </span>  Especial</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Controles -->
+        <button id="prevBtn" class="carousel-btn">&#10094;</button>
+        <button id="nextBtn" class="carousel-btn">&#10095;</button>
+        
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+          <span class="indicator active" data-slide="0"></span>
+          <span class="indicator" data-slide="1"></span>
+          <span class="indicator" data-slide="2"></span>
+        </div>
+      </section>
+
+<!-- Sección después del carrusel -->
+<section class="about-section">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="img/Especial100.jpeg" alt="Pastel Moniwis">
+      </div>
+      <div class="about-text">
+        <p class="slogan-line1">Nacidos del cariño, horneados con amor. En Moniwis</p>
+        <p class="slogan-line2">Cada cupcake está hecho para tu ocasión especial.”</p>
+        <p class="slogan-line3"> <a href="https://wa.me/5218341421734">Descubrelos</a></p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Sección espejo (imagen derecha/texto izquierda) -->
+<section class="about-section reverse-section">
+    <div class="about-container">
+      <div class="about-text">
+        <p class="slogan-line1">Pasteles Moniwis Decorados Para Cada Ocasión</p>
+        <p class="slogan-line2">Disfrútalos</p>
+        <p class="slogan-line3"><a href="https://wa.me/5218341421734">¡Visítanos hoy!</a></p>
+      </div>
+      <div class="about-image">
+        <img src="img/Pastel100.jpeg" alt="Ingredientes naturales">
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <!-- Sección de productos -->
+<section class="product-section">
+    <div class="product-header">
+      <h2>Conoce nuestros productos</h2>
+      <p>. Moniwis Cupcakes, cada mordida cuenta una historia. Perfectos para celebrar, regalar o simplemente endulzar tu día. ¡Descúbrelos y déjate consentir!</p>
+    </div>
+  
+    <div class="product-grid">
+      <!-- Producto 1 -->
+      <div class="product-card">
+        <img src="img/Clasicos3.png" alt="30_Cupcakes_Clasicos">
+        <h3>30 Cupcakes Clásicos</h3>
+        <p class="price">$330.00 + Envío</p>
+        <button class="add-to-cart" onclick="addToCart('30_Cupcakes_Clasicos', 330, 'img/Clasicos3.png')">Agregar al carrito</button>
+      </div>
+      
+      <!-- Producto 2 -->
+      <div class="product-card">
+        <img src="img/Tematicos13.png" alt="30_Cupcakes_Tematicos">
+        <h3>30 Cupcakes Temáticos</h3>
+        <p class="price">$360.00 + Envío</p>
+        <button class="add-to-cart" onclick="addToCart('30_Cupcakes_Tematicos', 360, 'img/Tematicos13.png')">Agregar al carrito</button>
+      </div>
+      
+      <!-- Producto 3 -->
+      <div class="product-card">
+        <img src="img/Clasicos10.png" alt="50_Cupcakes_Clasicos">
+        <h3>50 Cupcakes Clásicos</h3>
+        <p class="price">$500.00 + Envío</p>
+        <button class="add-to-cart" onclick="addToCart('50_Cupcakes_Clasicos', 500, 'img/Clasicos10.png')">Agregar al carrito</button>
+      </div>
+      
+      <!-- Producto 4 -->
+      <div class="product-card">
+        <img src="img/Tematicos16.png" alt="50_Cupcakes_Tematicos">
+        <h3>50 Cupcakes Temáticos</h3>
+        <p class="price">$550.00 + Envío</p>
+        <button class="add-to-cart" onclick="addToCart('50_Cupcakes_Tematicos', 550, 'img/Tematicos16.png')">Agregar al carrito</button>
+      </div>
+    </div>
+  
+    <div class="product-cta">
+      <a href="cupcake.html" class="discover-btn">Descubre nuestros productos</a>
+    </div>
+  </section>
+
+  <a href="https://wa.me/5218341421734" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp whatsapp-icon"></i>
+  </a>
+
+      
+  <footer class="site-footer">
+    <div class="footer-content">
+        <p class="copyright">© 2025 Moniwis Repostería - Todos los derechos reservados</p>
+        <div class="footer-contact">
+            <span>Contacto: rociobmd10@gmail.com</span>
+            <span class="separator">|</span>
+            <span>Tel: 834-142-1734</span>
+        </div>
+        
+        <div class="terms-conditions">
+            <p>Términos: Precios sujetos a confirmación. Moniwis se reserva el derecho de corregir errores.</p>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Carrito de compras -->
+<div class="cart-sidebar" id="cart-sidebar">
+  <div class="cart-header">
+      <h3>Tu Carrito</h3>
+      <button class="close-cart" id="close-cart">&times;</button>
+  </div>
+  <div class="cart-items" id="cart-items">
+      <!-- Los productos se agregarán dinámicamente aquí -->
+  </div>
+  <div class="cart-total">
+      <span>Total:</span>
+      <span id="cart-total">$0.00</span>
+  </div>
+  <button class="checkout-btn" id="checkout-btn">Finalizar Compra</button>
+</div>
+
+<!-- Formulario de pedido -->
+<div class="checkout-modal" id="checkout-modal">
+  <div class="checkout-content">
+      <span class="close-checkout" id="close-checkout">&times;</span>
+      <h3>Información del Pedido</h3>
+      <form id="order-form">
+          <div class="form-group">
+              <label for="customer-name">Nombre completo:</label>
+              <input type="text" id="customer-name" required>
+          </div>
+          <div class="form-group">
+              <label for="delivery-date">Fecha de entrega:</label>
+              <input type="date" id="delivery-date" required>
+          </div>
+          <div class="form-group">
+              <label for="delivery-address">Dirección de entrega:</label>
+              <textarea id="delivery-address" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+              <label for="customer-phone">Teléfono de contacto:</label>
+              <input type="tel" id="customer-phone" required>
+          </div>
+          <div class="form-group">
+              <label for="special-notes">Notas adicionales:</label>
+              <textarea id="special-notes" rows="2"></textarea>
+          </div>
+          <button type="submit" class="submit-order-btn">Enviar pedido por WhatsApp</button>
+      </form>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>

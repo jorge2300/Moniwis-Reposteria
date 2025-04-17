@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteles Moniwis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/cupcake.css">
+
+</head>
+<body>
+    <script src="js/main.js"></script>
+    <script src="js/cupcake.js"></script>
+    <script src="js/cart.js"></script>
+    <header>
+        <div class="logo"><a href="index.html"> <img src="img/home4.png" alt="1">  </a> </div>
+        <div class="header-right">
+            <div class="cart-icon" id="cart-toggle">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+          </div>
+    
+          <div class="menu-toggle" id="menu-toggle">☰</div>
+      </div>
+        <nav class="side-menu" id="side-menu">
+          <div class="close-btn" id="close-menu">✖</div>
+          <ul>
+            <li><a href="cupcake.html">Cupcakes</a></li>
+            <li><a href="pasteles.html">Pasteles</a></li>
+     <!--          <li><a href="mio_blog.html">Blog</a></li>-->
+          </ul>
+        </nav>
+      </header>
+
+
+
+    <div class="container">
+        <!-- Encabezado -->
+        <div class="gallery-header">
+            <h1>Pastelería Moniwis: Un Cupcake bonito y familiar</h1>
+            <p>En Pastelería Moniwis tenemos una exquisita variedad de Quequitos para cumpleaños, babyshower y diversos eventos para celebrar en Familia y Amigos. Cada Cupcake es elaborado con amor y con una atención meticulosa a los detalles, asegurando que cada mordida sea una experiencia unica.</p>
+            <h2>Explora nuestros deliciosos Cupcakes y sorprende a todos
+            </h2>
+        </div>
+
+        
+        <!-- Galería de pasteles -->
+        <div class="pastel-grid">
+            <!-- Pastel 1 -->
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Cupcake Clásico', 'img/Clasicos10.png', ['Pan de vainilla o Chocolate', 'Betun', 'Color a elección'], [
+                    {size: 'Fiesta Pequeña', persons: '20 Cupcakes Clásicos', price: '$220.00'},
+                    {size: 'Fiesta', persons: '30 Cupcakes Clásicos', price: '$330.00'},
+                    {size: 'Familia', persons: '40 Cupcakes Clásicos', price: '$440.00'},
+                    {size: 'Familia y amigos', persons: '50 Cupcakes Clásicos', price: '$500.00'}
+                ])">
+                    <img src="img/Clasicos10.png" alt="20_Cupcakes_Clasicos">
+                    <h3>20 Cupcake Clasicos</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('20_Cupcakes_Clasicos', 220, 'img/Clasicos10.png')">Agregar al carrito</button>
+            </div>
+            
+            
+            <!-- Pastel 2 -->
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Cupcake Temático', 'img/Tematicos13.png', ['Pan de vainilla o Chocolate', 'Betun', 'Color a elección'], [
+                    {size: 'Fiesta Pequeña', persons: '20 Cupcakes Temáticos', price: '$240.00'},
+                    {size: 'Fiesta', persons: '30 Cupcakes Temáticos', price: '$360.00'},
+                    {size: 'Familia', persons: '40 Cupcakes Temáticos', price: '$480.00'},
+                    {size: 'Familia y amigos', persons: '50 Cupcakes Temáticos', price: '$550.00'}
+                ])">
+                    <img src="img/Tematicos13.png" alt="20_Cupcakes_Temáticos">
+                    <h3>20 Cupcakes Temáticos</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('20_Cupcakes_Temáticos', 240, 'img/Tematicos13.png')">Agregar al carrito</button>
+            </div>
+            
+            <!-- Agrega más pasteles aquí (hasta 12) -->
+            <!-- Pastel 3 -->
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Cupcake Figuroso', 'img/Figurosos1.png', ['Pan de vainilla o Chocolate', 'Betun', 'Color a elección'], [
+                    {size: 'Fiesta Pequeña', persons: '20 Cupcakes Figurosos', price: '$260.00'},
+                    {size: 'Fiesta', persons: '30 Cupcakes Figurosos', price: '$390.00'},
+                    {size: 'Familia', persons: '40 Cupcakes Figurosos', price: '$520.00'},
+                    {size: 'Familia y amigos', persons: '50 Cupcakes Figurosos', price: '$600.00'}
+                ])">
+                    <img src="img/Figurosos1.png" alt="20_Cupcakes_Figurosos">
+                    <h3>20 Cupcakes Figurosos</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('20_Cupcakes_Figurosos', 260, 'img/Figurosos1.png')">Agregar al carrito</button>
+            </div>
+            
+            
+            <!-- Pastel 4 -->
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Cupcake Domitos', 'img/Domitos1.png', ['Pan de vainilla o Chocolate', 'Betun', 'Color a elección'], [
+                    {size: 'Fiesta Pequeña', persons: '20 Cupcakes Domitos', price: '$300.00'},
+                    {size: 'Fiesta', persons: '30 Cupcakes Domitos', price: '$450.00'},
+                    {size: 'Familia', persons: '40 Cupcakes Domitos', price: '$600.00'},
+                    {size: 'Familia y amigos', persons: '50 Cupcakes Domitos', price: '$700.00'}
+                ])">
+                    <img src="img/Domitos1.png" alt="20_Cupcakes_Domitos">
+                    <h3>20 Cupcakes Domitos</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('20_Cupcakes_Domitos', 300, 'img/Domitos1.png')">Agregar al carrito</button>
+            </div>
+
+
+
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Cupcake Clásico', 'img/Clasicos2.png', ['Pan de vainilla o Chocolate', 'Betun', 'Color a elección'], [
+                    {size: 'Fiesta Pequeña', persons: '20 Cupcakes Clásicos', price: '$220.00'},
+                    {size: 'Fiesta', persons: '30 Cupcakes Clásicos', price: '$330.00'},
+                    {size: 'Familia', persons: '40 Cupcakes Clásicos', price: '$440.00'},
+                    {size: 'Familia y amigos', persons: '50 Cupcakes Clásicos', price: '$500.00'}
+                ])">
+                    <img src="img/Clasicos2.png" alt="20_Cupcakes_Clasicos">
+                    <h3>30 Cupcake Clasicos</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('30_Cupcakes_Clasicos', 330, 'img/Clasicos2.png')">Agregar al carrito</button>
+            </div>
+            
+            
+            <!-- Pastel 2 -->
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Cupcake Temático', 'img/Tematicos12.png', ['Pan de vainilla o Chocolate', 'Betun', 'Color a elección'], [
+                    {size: 'Fiesta Pequeña', persons: '20 Cupcakes Temáticos', price: '$240.00'},
+                    {size: 'Fiesta', persons: '30 Cupcakes Temáticos', price: '$360.00'},
+                    {size: 'Familia', persons: '40 Cupcakes Temáticos', price: '$480.00'},
+                    {size: 'Familia y amigos', persons: '50 Cupcakes Temáticos', price: '$550.00'}
+                ])">
+                    <img src="img/Tematicos12.png" alt="30_Cupcakes_Temáticos">
+                    <h3>30 Cupcakes Temáticos</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('30_Cupcakes_Temáticos', 360, 'img/Tematicos12.png')">Agregar al carrito</button>
+            </div>
+            
+            <!-- Agrega más pasteles aquí (hasta 12) -->
+            <!-- Pastel 3 -->
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Cupcake Figuroso', 'img/Figurosos7.png', ['Pan de vainilla o Chocolate', 'Betun', 'Color a elección'], [
+                    {size: 'Fiesta Pequeña', persons: '20 Cupcakes Figurosos', price: '$260.00'},
+                    {size: 'Fiesta', persons: '30 Cupcakes Figurosos', price: '$390.00'},
+                    {size: 'Familia', persons: '40 Cupcakes Figurosos', price: '$520.00'},
+                    {size: 'Familia y amigos', persons: '50 Cupcakes Figurosos', price: '$600.00'}
+                ])">
+                    <img src="img/Figurosos7.png" alt="30_Cupcakes_Figurosos">
+                    <h3>30 Cupcakes Figurosos</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('30_Cupcakes_Figurosos', 390, 'img/Figurosos7.png')">Agregar al carrito</button>
+            </div>
+            
+            
+            <!-- Pastel 4 -->
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Cupcake Domitos', 'img/Domitos2.png', ['Pan de vainilla o Chocolate', 'Betun', 'Color a elección'], [
+                    {size: 'Fiesta Pequeña', persons: '20 Cupcakes Domitos', price: '$300.00'},
+                    {size: 'Fiesta', persons: '30 Cupcakes Domitos', price: '$450.00'},
+                    {size: 'Familia', persons: '40 Cupcakes Domitos', price: '$600.00'},
+                    {size: 'Familia y amigos', persons: '50 Cupcakes Domitos', price: '$700.00'}
+                ])">
+                    <img src="img/Domitos2.png" alt="30_Cupcakes_Domitos">
+                    <h3>30 Cupcakes Domitos</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('30_Cupcakes_Domitos', 450, 'img/Domitos2.png')">Agregar al carrito</button>
+            </div>
+
+
+
+
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Cupcake Clásico', 'img/Clasicos3.png', ['Pan de vainilla o Chocolate', 'Betun', 'Color a elección'], [
+                    {size: 'Fiesta Pequeña', persons: '20 Cupcakes Clásicos', price: '$220.00'},
+                    {size: 'Fiesta', persons: '30 Cupcakes Clásicos', price: '$330.00'},
+                    {size: 'Familia', persons: '40 Cupcakes Clásicos', price: '$440.00'},
+                    {size: 'Familia y amigos', persons: '50 Cupcakes Clásicos', price: '$500.00'}
+                ])">
+                    <img src="img/Clasicos3.png" alt="40_Cupcakes_Clasicos">
+                    <h3>40 Cupcake Clasicos</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('40_Cupcakes_Clasicos', 440, 'img/Clasicos3.png')">Agregar al carrito</button>
+            </div>
+            
+            
+            <!-- Pastel 2 -->
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Cupcake Temático', 'img/Tematicos3.png', ['Pan de vainilla o Chocolate', 'Betun', 'Color a elección'], [
+                    {size: 'Fiesta Pequeña', persons: '20 Cupcakes Temáticos', price: '$240.00'},
+                    {size: 'Fiesta', persons: '30 Cupcakes Temáticos', price: '$360.00'},
+                    {size: 'Familia', persons: '40 Cupcakes Temáticos', price: '$480.00'},
+                    {size: 'Familia y amigos', persons: '50 Cupcakes Temáticos', price: '$550.00'}
+                ])">
+                    <img src="img/Tematicos3.png" alt="40_Cupcakes_Temáticos">
+                    <h3>40 Cupcakes Temáticos</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('40_Cupcakes_Temáticos', 480, 'img/Tematicos3.png')">Agregar al carrito</button>
+            </div>
+            
+            <!-- Agrega más pasteles aquí (hasta 12) -->
+            <!-- Pastel 3 -->
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Cupcake Figuroso', 'img/Figurosos8.png', ['Pan de vainilla o Chocolate', 'Betun', 'Color a elección'], [
+                    {size: 'Fiesta Pequeña', persons: '20 Cupcakes Figurosos', price: '$260.00'},
+                    {size: 'Fiesta', persons: '30 Cupcakes Figurosos', price: '$390.00'},
+                    {size: 'Familia', persons: '40 Cupcakes Figurosos', price: '$520.00'},
+                    {size: 'Familia y amigos', persons: '50 Cupcakes Figurosos', price: '$600.00'}
+                ])">
+                    <img src="img/Figurosos8.png" alt="40_Cupcakes_Figurosos">
+                    <h3>40 Cupcakes Figurosos</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('40_Cupcakes_Figurosos', 520, 'img/Figurosos8.png')">Agregar al carrito</button>
+            </div>
+            
+            
+            <!-- Pastel 4 -->
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Cupcake Domitos', 'img/Especial4.png', ['Pan de vainilla o Chocolate', 'Betun', 'Color a elección'], [
+                    {size: 'Fiesta Pequeña', persons: '20 Cupcakes Domitos', price: '$300.00'},
+                    {size: 'Fiesta', persons: '30 Cupcakes Domitos', price: '$450.00'},
+                    {size: 'Familia', persons: '40 Cupcakes Domitos', price: '$600.00'},
+                    {size: 'Familia y amigos', persons: '50 Cupcakes Domitos', price: '$700.00'}
+                ])">
+                    <img src="img/Especial4.png" alt="20_Cupcakes_Domitos">
+                    <h3>40 Cupcakes Domitos</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('40_Cupcakes_Domitos', 600, 'img/Especial4.png')">Agregar al carrito</button>
+            </div>
+
+
+
+
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Cupcake Clásico', 'img/Clasicos4.png', ['Pan de vainilla o Chocolate', 'Betun', 'Color a elección'], [
+                    {size: 'Fiesta Pequeña', persons: '20 Cupcakes Clásicos', price: '$220.00'},
+                    {size: 'Fiesta', persons: '30 Cupcakes Clásicos', price: '$330.00'},
+                    {size: 'Familia', persons: '40 Cupcakes Clásicos', price: '$440.00'},
+                    {size: 'Familia y amigos', persons: '50 Cupcakes Clásicos', price: '$500.00'}
+                ])">
+                    <img src="img/Clasicos4.png" alt="50_Cupcakes_Clasicos">
+                    <h3>50 Cupcake Clasicos</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('50_Cupcakes_Clasicos', 500, 'img/Clasicos4.png')">Agregar al carrito</button>
+            </div>
+            
+            
+            <!-- Pastel 2 -->
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Cupcake Temático', 'img/Tematicos15.png', ['Pan de vainilla o Chocolate', 'Betun', 'Color a elección'], [
+                    {size: 'Fiesta Pequeña', persons: '20 Cupcakes Temáticos', price: '$240.00'},
+                    {size: 'Fiesta', persons: '30 Cupcakes Temáticos', price: '$360.00'},
+                    {size: 'Familia', persons: '40 Cupcakes Temáticos', price: '$480.00'},
+                    {size: 'Familia y amigos', persons: '50 Cupcakes Temáticos', price: '$550.00'}
+                ])">
+                    <img src="img/Tematicos15.png" alt="50_Cupcakes_Temáticos">
+                    <h3>50 Cupcakes Temáticos</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('50_Cupcakes_Temáticos', 550, 'img/Tematicos15.png')">Agregar al carrito</button>
+            </div>
+            
+            <!-- Agrega más pasteles aquí (hasta 12) -->
+            <!-- Pastel 3 -->
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Cupcake Figuroso', 'img/Figurosos6.png', ['Pan de vainilla o Chocolate', 'Betun', 'Color a elección'], [
+                    {size: 'Fiesta Pequeña', persons: '20 Cupcakes Figurosos', price: '$260.00'},
+                    {size: 'Fiesta', persons: '30 Cupcakes Figurosos', price: '$390.00'},
+                    {size: 'Familia', persons: '40 Cupcakes Figurosos', price: '$520.00'},
+                    {size: 'Familia y amigos', persons: '50 Cupcakes Figurosos', price: '$600.00'}
+                ])">
+                    <img src="img/Figurosos6.png" alt="50_Cupcakes_Figurosos">
+                    <h3>50 Cupcakes Figurosos</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('20_Cupcakes_Figurosos', 600, 'img/Figurosos6.png')">Agregar al carrito</button>
+            </div>
+            
+            
+            <!-- Pastel 4 -->
+            <div class="pastel-card">
+                <div class="pastel-image-container" onclick="openModal('Cupcake Domitos', 'img/Especial2.jpeg', ['Pan de vainilla o Chocolate', 'Betun', 'Color a elección'], [
+                    {size: 'Fiesta Pequeña', persons: '20 Cupcakes Domitos', price: '$300.00'},
+                    {size: 'Fiesta', persons: '30 Cupcakes Domitos', price: '$450.00'},
+                    {size: 'Familia', persons: '40 Cupcakes Domitos', price: '$600.00'},
+                    {size: 'Familia y amigos', persons: '50 Cupcakes Domitos', price: '$700.00'}
+                ])">
+                    <img src="img/Especial2.jpeg" alt="50_Cupcakes_Domitos">
+                    <h3>50 Cupcakes Domitos</h3>
+                </div>
+                <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('50_Cupcakes_Domitos', 700, 'img/Especial2.jpeg')">Agregar al carrito</button>
+            </div>
+
+
+            <!-- Puedes continuar agregando más pasteles hasta 12 -->
+        </div>
+    </div>
+    
+    <!-- Modal de detalles -->
+    <div id="pastelModal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="modal-image">
+                <img id="modalPastelImage" src="" alt="">
+            </div>
+            <div class="modal-details">
+                <h2 id="modalPastelTitle"></h2>
+                <div class="price-range" id="modalPriceRange"></div>
+                
+                <div class="size-options" id="sizeOptions"></div>
+                
+                <h3>Saber más</h3>
+                <ul class="ingredients-list" id="ingredientsList"></ul>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="https://wa.me/521831421734" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+      </a>
+    
+      <footer class="site-footer">
+        <div class="footer-content">
+            <p class="copyright">© 2025 Moniwis Repostería - Todos los derechos reservados</p>
+            <div class="footer-contact">
+                <span>Contacto: rociobmd10@gmail.com</span>
+                <span class="separator">|</span>
+                <span>Tel: 834-142-1734</span>
+            </div>
+            
+            <div class="terms-conditions">
+                <p>Términos: Precios sujetos a confirmación. Moniwis se reserva el derecho de corregir errores.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+      <!-- Carrito de compras -->
+<div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+        <h3>Tu Carrito</h3>
+        <button class="close-cart" id="close-cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+        <!-- Los productos se agregarán dinámicamente aquí -->
+    </div>
+    <div class="cart-total">
+        <span>Total:</span>
+        --<span id="cart-total">$0.00</span>
+    </div>
+    <button class="checkout-btn" id="checkout-btn">Finalizar Compra</button>
+  </div>
+  
+  <!-- Formulario de pedido -->
+  <div class="checkout-modal" id="checkout-modal">
+    <div class="checkout-content">
+        <span class="close-checkout" id="close-checkout">&times;</span>
+        <h3>Información del Pedido</h3>
+        <form id="order-form">
+            <div class="form-group">
+                <label for="customer-name">Nombre completo:</label>
+                <input type="text" id="customer-name" required>
+            </div>
+            <div class="form-group">
+                <label for="delivery-date">Fecha de entrega:</label>
+                <input type="date" id="delivery-date" required>
+            </div>
+            <div class="form-group">
+                <label for="delivery-address">Dirección de entrega:</label>
+                <textarea id="delivery-address" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="customer-phone">Teléfono de contacto:</label>
+                <input type="tel" id="customer-phone" required>
+            </div>
+            <div class="form-group">
+                <label for="special-notes">Notas adicionales:</label>
+                <textarea id="special-notes" rows="2"></textarea>
+            </div>
+            <button type="submit" class="submit-order-btn">Enviar pedido por WhatsApp</button>
+        </form>
+    </div>
+  </div>
+
+  
+
+
+</body>
+</html>
