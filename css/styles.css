@@ -23,6 +23,19 @@ header {
   font-weight: bold;
 }
 
+
+.logo img {
+  height: auto; /* Mantiene la proporción */
+  transition: all 0.3s ease; /* Suaviza el cambio de tamaño */
+}
+
+/* Tamaño para escritorio (opcional, si quieres controlarlo) */
+.logo img {
+  max-height: 80px; /* Ajusta este valor según necesites */
+}
+
+
+
 .menu-toggle {
   font-size: 1.5rem;
   cursor: pointer;
@@ -672,6 +685,12 @@ main {
     height: auto;
     display: block;
 }
+
+.logo img {
+  max-height: 50px; /* Ajusta este valor para el tamaño móvil */
+  width: auto; /* Mantiene la proporción */
+}
+
 
 .hero-text {
   font-size: 1.5rem;
