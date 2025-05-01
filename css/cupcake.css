@@ -43,7 +43,7 @@ header {
   left: -100%;
   width: 250px;
   height: 100%;
-  background-color: #ff73009d;
+  background-color: #8145149d;
   padding: 2rem;
   box-shadow: 2px 0 6px rgba(0,0,0,0.2);
   transition: left 0.3s ease;
@@ -72,7 +72,7 @@ header {
 
 .side-menu a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   font-size: 1.2rem;
 }
 

@@ -53,7 +53,7 @@ header {
   left: -100%;
   width: 250px;
   height: 100%;
-  background-color: #ff73009d;
+  background-color: #8145149d;
   padding: 2rem;
   box-shadow: 2px 0 6px rgba(0,0,0,0.2);
   transition: left 0.3s ease;
@@ -82,7 +82,7 @@ header {
 
 .side-menu a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   font-size: 1.2rem;
 }
 
@@ -183,24 +183,28 @@ header {
 
 .texto-oferta {
   position: absolute;
-  top: 50%;
+  top: 65%; /* Cambiado de 50% a 65% para bajar el texto */
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 5;
+  width: 90%; /* Limita el ancho para mejor legibilidad */
+  max-width: 800px; /* Máximo ancho del texto */
 }
 
 .destacado {
   font-style: italic;
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 1.5em; /* Reducido de 2.5em a 1.8em */
   color: #ffffff;
   text-shadow: 
-      0 0 5px #fff,
-      0 0 10px rgba(255, 255, 255, 0.7),
-      0 0 15px rgba(255, 255, 255, 0.5);
-  padding: 10px 20px;
+      0 0 3px #fff, /* Reducida intensidad de sombras */
+      0 0 7px rgba(255, 255, 255, 0.5),
+      0 0 10px rgba(255, 255, 255, 0.3);
+  padding: 8px 15px;
   border-radius: 5px;
+  /*background-color: rgba(0, 0, 0, 0.3); /* Fondo semitransparente */
+  line-height: 1.4; /* Mejor espaciado entre líneas */
 }
 
 /* Secciones */
@@ -758,9 +762,15 @@ main {
   }
   
   .destacado {
-      font-size: 1.8rem;
-      padding: 5px 10px;
+    font-size: 1.1em; /* Tamaño aún más pequeño en móviles */
+    padding: 5px 10px;
   }
+  
+  .texto-oferta {
+    top: 70%; /* Posición más baja en móviles */
+    width: 95%;
+  }
+
   
   /* Secciones de contenido */
   .about-container {
