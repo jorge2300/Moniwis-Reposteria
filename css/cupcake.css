@@ -12,7 +12,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #ead6d6;
+  background-color: #fff7f7;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -22,8 +22,15 @@ header {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  
 }
 
+.logo img {
+  width: 100px; /* Ajusta el tamaño que quieras */
+  height: 100px;
+  border-radius: 50%; /* Esto la hace circular */
+  object-fit: cover;
+}
 .menu-toggle {
   font-size: 1.5rem;
   cursor: pointer;
@@ -560,7 +567,7 @@ main {
 /* MEDIA QUERIES PARA DISPOSITIVOS MÓVILES */
 /* ============================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   /* Ajustes generales */
   body {
       font-size: 14px;
@@ -574,6 +581,13 @@ main {
   .logo {
       font-size: 1.2rem;
   }
+
+   /* Logo imagen más pequeña en móvil */
+   .logo img {
+    width: 120px;
+    height: 120px;
+}
+
   
   /* Galería */
   .gallery-header h1 {
