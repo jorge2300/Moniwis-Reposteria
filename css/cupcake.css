@@ -584,10 +584,12 @@ main {
 
    /* Logo imagen más pequeña en móvil */
    .logo img {
-    width: 90px;
-    height: 90px;
-}
-
+    width: auto;       /* Permite que el ancho se ajuste proporcionalmente */
+    height: 90px;      /* Altura fija intermedia entre 50px y 120px */
+    max-width: 100%;   /* Evita que sobrepase el contenedor */
+    object-fit: contain; /* Mantiene proporciones sin distorsión */
+    margin: 0 auto;    /* Centra la imagen */
+  }
   
   /* Galería */
   .gallery-header h1 {
